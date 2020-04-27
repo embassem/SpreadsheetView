@@ -27,7 +27,7 @@ public class SpreadsheetView: UIView {
     public weak var delegate: SpreadsheetViewDelegate?
 
     /// The horizontal and vertical spacing between cells.
-    /// 
+    ///
     /// - Note: The default spacing is `(1.0, 1.0)`. Negative values are not supported.
     public var intercellSpacing = CGSize(width: 1, height: 1)
     public var gridStyle: GridStyle = .solid(width: 1, color: .lightGray)
@@ -84,7 +84,7 @@ public class SpreadsheetView: UIView {
     ///
     /// - Note: The scroll-to-top gesture is a tap on the status bar. When a user makes this gesture,
     /// the system asks the scroll view closest to the status bar to scroll to the top.
-    /// If that scroll view has `scrollsToTop` set to `false`, its delegate returns false from `scrollViewShouldScrollToTop(_:)`, 
+    /// If that scroll view has `scrollsToTop` set to `false`, its delegate returns false from `scrollViewShouldScrollToTop(_:)`,
     /// or the content is already at the top, nothing happens.
     ///
     /// After the scroll view scrolls to the top of the content view, it sends the delegate a `scrollViewDidScrollToTop(_:)` message.
@@ -156,7 +156,6 @@ public class SpreadsheetView: UIView {
             + Array(cornerView.visibleCells) + Array(tableView.visibleCells)
         return cells.sorted()
     }
-
 
     /// An array of the visible items in the collection view.
     /// - Note: The value of this property is a sorted array of IndexPath objects, each of which corresponds to a visible cell in the spreadsheet view.

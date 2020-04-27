@@ -47,7 +47,7 @@ extension SpreadsheetView {
     @available(iOS 11.0, *)
     public var adjustedContentInset: UIEdgeInsets {
         get {
-            return rootView.adjustedContentInset
+        return rootView.adjustedContentInset
         }
     }
     #endif
@@ -67,7 +67,7 @@ extension SpreadsheetView {
     func _notifyDidScroll() {
         resetScrollViewFrame()
     }
-    
+
     public override func isKind(of aClass: AnyClass) -> Bool {
         if #available(iOS 11.0, *) {
             return super.isKind(of: aClass)

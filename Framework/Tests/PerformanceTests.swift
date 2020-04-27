@@ -124,7 +124,7 @@ class PerformanceTests: XCTestCase {
     func testReduce() {
         let numbers = [Int](repeating: 20, count: 100000)
         measure {
-            let _ = numbers.reduce(0) { $0 + $1 }
+            _ = numbers.reduce(0) { $0 + $1 }
         }
     }
 }

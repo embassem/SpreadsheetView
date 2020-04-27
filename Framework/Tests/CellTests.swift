@@ -13,11 +13,11 @@ class CellTests: XCTestCase {
     override func setUp() {
         super.setUp()
     }
-    
+
     override func tearDown() {
         super.tearDown()
     }
-    
+
     func testViewHierarchy() {
         let cell = Cell()
         XCTAssertNil(cell.backgroundView)

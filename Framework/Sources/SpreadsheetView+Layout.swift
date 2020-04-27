@@ -321,7 +321,7 @@ extension SpreadsheetView {
         } else {
             tableView.state.frame.size.height = frame.height - verticalInset
         }
-        
+
         resetOverlayViewContentSize(contentInset)
     }
 
